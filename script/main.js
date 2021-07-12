@@ -52,7 +52,7 @@ const createCactus = () => {
             background.removeChild(cactus);
         } else if (cactusPosition > 0 && cactusPosition < 60 && position < 60) {
             clearInterval(leftInterval);
-            document.body.innerHTML = `<div class="gameover"><span>Fim<span><p>Pontuação: <strong>${userPoints}</strong></p><button class="buttonRestart">Jogar Novamente</button></div>`
+            document.body.innerHTML = `<div class="gameover"><span>Fim<span><p>Pontuação: <strong>${userPoints}</strong></p></div>`
             console.log(userPoints)
         } else {
             cactusPosition -= 10; //aumentar tempo
